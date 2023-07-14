@@ -72,25 +72,35 @@ struct ContentView: View {
         }
 
     }
-    
+
     func deal(){
         // Randomize the player's card
         let playerCardValue = Int.random(in: 2...14)
-        playerCard = "card" + String(playerCardValue)
+        playerCard = "back"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            playerCard = "card" + String(playerCardValue)
+        }
         // Randomize the cpu's card
         let cpuCardValue = Int.random(in: 2...14)
-        cpuCard = "card" + String(cpuCardValue)
+        cpuCard = "back"
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            cpuCard = "card" + String(cpuCardValue)
+        }
         
-        // Update the score
-        if playerCardValue > cpuCardValue {
-            playerScore += 1
-        }
-        else if playerCardValue < cpuCardValue {
-            cpuScore += 1
-        }
-        else {
-            playerScore += 1
-            cpuScore += 1
+        //0.25s delay
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            
+            // Update the score
+            if playerCardValue > cpuCardValue {
+                playerScore += 1
+            }
+            else if playerCardValue < cpuCardValue {
+                cpuScore += 1
+            }
+            else {
+                playerScore += 1
+                cpuScore += 1
+            }
         }
     }
     
