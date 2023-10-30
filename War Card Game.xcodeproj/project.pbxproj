@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		784B62BA2AF01AD900676AD6 /* Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784B62B62AF01AD900676AD6 /* Theme.mp3 */; };
+		784B62BB2AF01AD900676AD6 /* CardFlip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784B62B72AF01AD900676AD6 /* CardFlip.mp3 */; };
+		784B62BC2AF01AD900676AD6 /* Lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784B62B82AF01AD900676AD6 /* Lose.mp3 */; };
+		784B62BF2AF01AE900676AD6 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B62BE2AF01AE900676AD6 /* SoundManager.swift */; };
+		784B62C32AF01E1B00676AD6 /* Win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784B62C22AF01E1B00676AD6 /* Win.mp3 */; };
 		787C83892A6064E700F43C72 /* War_Card_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C83882A6064E700F43C72 /* War_Card_GameApp.swift */; };
 		787C838B2A6064E700F43C72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C838A2A6064E700F43C72 /* ContentView.swift */; };
 		787C838D2A6064E700F43C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 787C838C2A6064E700F43C72 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		784B62B62AF01AD900676AD6 /* Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Theme.mp3; sourceTree = "<group>"; };
+		784B62B72AF01AD900676AD6 /* CardFlip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CardFlip.mp3; sourceTree = "<group>"; };
+		784B62B82AF01AD900676AD6 /* Lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lose.mp3; sourceTree = "<group>"; };
+		784B62BE2AF01AE900676AD6 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		784B62C22AF01E1B00676AD6 /* Win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Win.mp3; sourceTree = "<group>"; };
 		787C83852A6064E700F43C72 /* War Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "War Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		787C83882A6064E700F43C72 /* War_Card_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = War_Card_GameApp.swift; sourceTree = "<group>"; };
 		787C838A2A6064E700F43C72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		784B62B52AF0190700676AD6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				784B62C22AF01E1B00676AD6 /* Win.mp3 */,
+				784B62B72AF01AD900676AD6 /* CardFlip.mp3 */,
+				784B62B82AF01AD900676AD6 /* Lose.mp3 */,
+				784B62B62AF01AD900676AD6 /* Theme.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		787C837C2A6064E700F43C72 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +72,12 @@
 		787C83872A6064E700F43C72 /* War Card Game */ = {
 			isa = PBXGroup;
 			children = (
+				784B62B52AF0190700676AD6 /* Sounds */,
 				787C83882A6064E700F43C72 /* War_Card_GameApp.swift */,
 				787C838A2A6064E700F43C72 /* ContentView.swift */,
 				787C838C2A6064E700F43C72 /* Assets.xcassets */,
 				787C838E2A6064E700F43C72 /* Preview Content */,
+				784B62BE2AF01AE900676AD6 /* SoundManager.swift */,
 			);
 			path = "War Card Game";
 			sourceTree = "<group>";
@@ -125,8 +148,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784B62BA2AF01AD900676AD6 /* Theme.mp3 in Resources */,
 				787C83902A6064E700F43C72 /* Preview Assets.xcassets in Resources */,
+				784B62BC2AF01AD900676AD6 /* Lose.mp3 in Resources */,
+				784B62C32AF01E1B00676AD6 /* Win.mp3 in Resources */,
 				787C838D2A6064E700F43C72 /* Assets.xcassets in Resources */,
+				784B62BB2AF01AD900676AD6 /* CardFlip.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +166,7 @@
 			files = (
 				787C838B2A6064E700F43C72 /* ContentView.swift in Sources */,
 				787C83892A6064E700F43C72 /* War_Card_GameApp.swift in Sources */,
+				784B62BF2AF01AE900676AD6 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
